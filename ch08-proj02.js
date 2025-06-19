@@ -1,30 +1,22 @@
-const section = document.getElementById("attractionList");
+window.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("attractions");
 
-content.forEach(attraction => {
-  const article = document.createElement("article");
+  attractions.forEach(attraction => {
+    const section = document.createElement("section");
+    section.className = "attraction";
 
-  const img = document.createElement("img");
-  img.src = attraction.image;
-  img.alt = attraction.name;
+    section.innerHTML = `
+      <img src="${attraction.image}" alt="${attraction.name}">
+      <div>
+        <h2>${attraction.name}</h2>
+        <p>${attraction.description}</p>
+        <div class="tags">
+          ${attraction.tags.map(tag => `<span class="tag ${tag}">${tag}</span>`).join("")}
+        </div>
+      </div>
+    `;
 
-  const h2 = document.createElement("h2");
-  h2.textContent = attraction.name;
-
-  const p = document.createElement("p");
-  p.textContent = attraction.description;
-
-  const tagContainer = document.createElement("div");
-  attraction.tags.forEach((tag, index) => {
-    const span = document.createElement("span");
-    span.textContent = tag;
-    span.style.backgroundColor = attraction.colors[index];
-    tagContainer.appendChild(span);
+    container.appendChild(section);
   });
-
-  article.appendChild(img);
-  article.appendChild(h2);
-  article.appendChild(p);
-  article.appendChild(tagContainer);
-
-  section.appendChild(article);
 });
+
