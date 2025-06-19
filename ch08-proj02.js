@@ -19,4 +19,3 @@ window.addEventListener("DOMContentLoaded", () => {
     container.appendChild(section);
   });
 });
-
