@@ -21,4 +21,3 @@ const attractions = [
     tags: ["Music", "Concerts", "Landmark"]
   }
 ];
-
