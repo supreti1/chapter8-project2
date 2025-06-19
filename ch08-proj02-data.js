@@ -1,23 +1,24 @@
-const content = [
+const attractions = [
   {
     name: "British Museum",
+    location: "London, United Kingdom",
     description: "The British Museum is a public institution dedicated to human history, art and culture.",
-    image: "images/british.jpg",
-    tags: ["History", "Culture", "Free Entry"],
-    colors: ["#d9534f", "#5bc0de", "#5cb85c"]
+    image: "images/museum.jpg",
+    tags: ["History", "Culture", "Free Entry"]
   },
   {
     name: "Emirates Stadium",
+    location: "London, United Kingdom",
     description: "Home of Arsenal Football Club, this stadium is a must-see for sports fans.",
-    image: "images/emirates.jpg",
-    tags: ["Sports", "Modern", "Arsenal"],
-    colors: ["#f0ad4e", "#d9534f", "#292b2c"]
+    image: "images/stadium.jpg",
+    tags: ["Sports", "Modern", "Arsenal"]
   },
   {
     name: "Royal Albert Hall",
+    location: "London, United Kingdom",
     description: "One of London’s most treasured architectural landmarks and music venues.",
-    image: "images/albert.jpg",
-    tags: ["Music", "Concerts", "Landmark"],
-    colors: ["#5cb85c", "#0275d8", "#d9534f"]
+    image: "images/hall.jpg",
+    tags: ["Music", "Concerts", "Landmark"]
   }
 ];
+
